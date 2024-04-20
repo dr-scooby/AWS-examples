@@ -27,4 +27,23 @@ check:
 nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls s3://jahangir-bucket-example
 2024-04-19 17:26:35      19821 JIsmail Java Resume.docx
 
+delete a bucket, but need to delete contents first:
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+2024-04-19 17:25:13 jahangir-bucket-example
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls s3://jahangir-bucket-example
+2024-04-19 17:26:35      19821 JIsmail Java Resume.docx
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 rm s3://jahangir-bucket-example --recursive
+delete: s3://jahangir-bucket-example/JIsmail Java Resume.docx
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+2024-04-19 17:25:13 jahangir-bucket-example
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 rb s3://jahangir-bucket-example
+remove_bucket: jahangir-bucket-example
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+nurali@mint-vm:~/aws-examples/AWS-examples$ 
+
 
