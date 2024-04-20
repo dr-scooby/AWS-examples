@@ -1,0 +1,7 @@
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 mb s3://jahangir-scooby-bucket
+make_bucket: jahangir-scooby-bucket
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+2024-04-19 19:51:53 jahangir-scooby-bucket
+
+
