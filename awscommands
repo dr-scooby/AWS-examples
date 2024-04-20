@@ -19,3 +19,12 @@ nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls s3://jahangir-bucket-examp
 2024-04-19 17:26:35      19821 JIsmail Java Resume.docx
 2024-04-19 19:19:27         14 test.txt
 
+delete a file:
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 rm s3://jahangir-bucket-example/test.txt
+delete: s3://jahangir-bucket-example/test.txt
+
+check:
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls s3://jahangir-bucket-example
+2024-04-19 17:26:35      19821 JIsmail Java Resume.docx
+
+
