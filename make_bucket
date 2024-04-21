@@ -5,3 +5,24 @@ nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
 2024-04-19 19:51:53 jahangir-scooby-bucket
 
 
+create a bucket and create a folder in that bucket:
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 mb s3://jahangir-scooby-bucket
+make_bucket: jahangir-scooby-bucket
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+2024-04-21 15:53:13 jahangir-scooby-bucket
+
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3api put-object --bucket jahangir-scooby-bucket --key mypics/
+{
+    "ETag": "\"d41d8cd98f00b204e9800998ecf8427e\"",
+    "ServerSideEncryption": "AES256"
+}
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
+2024-04-21 15:53:13 jahangir-scooby-bucket
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls s3://jahangir-scooby-bucket
+                           PRE mypics/
+
+nurali@mint-vm:~/aws-examples/AWS-examples$ 
+
+
