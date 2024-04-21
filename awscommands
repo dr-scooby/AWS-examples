@@ -46,4 +46,18 @@ remove_bucket: jahangir-bucket-example
 nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3 ls
 nurali@mint-vm:~/aws-examples/AWS-examples$ 
 
+list buckets using s3api:
+nurali@mint-vm:~/aws-examples/AWS-examples$ aws s3api list-buckets
+{
+    "Buckets": [
+        {
+            "Name": "jahangir-scooby-bucket",
+            "CreationDate": "2024-04-21T22:53:13+00:00"
+        }
+    ],
+    "Owner": {
+        "DisplayName": "helloscoobydoobydoo",
+        "ID": "0a56f6635a016b841dbb8cb359ce1c9a9025666e590d17d80c5a91d8b0722214"
+    }
+}
 
