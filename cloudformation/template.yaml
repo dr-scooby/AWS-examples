@@ -1,0 +1,12 @@
+
+
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A simple template
+Resources:
+#https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-s3-bucket.html
+  S3Bucket:
+#https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.Walkthrough.html
+    Type: 'AWS::S3::Bucket'
+   # don't need to supply buckt name, AWS will generate random name
+    Properties:
+        BucketName: jiggywiggy-bucket
